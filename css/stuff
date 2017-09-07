@@ -1,53 +1,72 @@
-    body {
-		        background-color: #b3b3b3;
-		        margin: 0px;
-		        padding: 0px;
-		    }
-		    ul {
-			    list-style-type: none;
-			    margin: auto;
-			    padding: 0;
-			    overflow: hidden;
-			    background-color: #666666;
-			    width: 65%;
-			    border-radius: 2px;
-			}
-			
-			li {
-			    float: left;
-			    border-right: solid #d9d9d9;
-			}
-			
-			li a {
-			    display: block;
-			    color: white;
-			    text-align: center;
-			    padding: 14px 16px;
-			    text-decoration: none;
-			}
-		    .header {
-		    	background-color: #D0D0D0;
-		    	width: 95%;
-		    	height: 100%;
-		    	margin-top: 70px;
-		    	margin-left: auto;
-		    	margin-right: auto;
-		    	border-radius: 20px;
-		    }
-		    .header_text{
-		    	text-align: center;
-		    	margin: 0px;
-		    	margin-bottom: 20px;
-		    }
-		    .header_link {
-		    	text-decoration: none;
-		    	color: black;
-		    	display: block;
-		    }
-		    .header_img {
-				height: 250px;
-				width: 350px;
-				display: block;
-				margin: auto;
-				border-radius: 20%;
-		    }
+	body {
+		background-color: #cccccc;
+	}
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	.nav {
+	    list-style-type: none;
+	    margin: 0;
+	    padding-left: 50px;
+	    padding-right: 30px;
+	    overflow: hidden;
+	    background-color: rgba(144, 146, 153, 0.94);
+	    border-radius: 2px;
+	    position: fixed;
+	    top: 0px;
+	    width: 100%;
+	    box-sizing: border-box;
+	    z-index: 100;
+	}
+	li {
+		float: right;
+	}
+	.nav-link {
+		display: block;
+	    color: white;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	    border-left: solid;
+	    border-radius: 5px;
+	}
+	.page1 {
+		box-sizing: border-box;
+		height: 970px;
+		background: url() no-repeat center top fixed;
+		background-size: cover;
+		position: relative;
+	}
+	.middle {
+		padding-top: 140px;
+		margin: auto;
+		box-sizing: border-box;
+	}
+	.middle-text {
+		width: 1170px;
+		margin: auto;
+		box-sizing: border-box;
+	}
+	.main-text {
+		text-align: center;
+		font-size: 100px;
+		font-family: comic sans ms;
+		color: white;
+		text-shadow: 3px 3px black;
+	}
+	.middle-img{
+		width: 1170px;
+		margin: auto;
+		box-sizing: border-box;
+	}
+	.main-img {
+		height: 350px;
+		border-radius: 30px;
+		display: block;
+		margin: auto;
+		opacity: .8; 
+	}
+	.icon {
+		padding-right: 10px;
+	}
