@@ -10,42 +10,65 @@ h1, p {
     margin: 0;
 }
 
-header {
-    padding: 0;
+
+
+
+
+ul {
+    list-style-type: none;
     margin: 0;
-    background-color: rgba(29, 31, 32, 0.66);
+    padding: 0;
+    background-color: rgba(29, 41, 52, 0.66);
     z-index: 101;
     position: fixed;
     width: 100%;
 }
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-header nav ul li {
-    margin: 0;
+.nav-li {
     float: right;
+}
+.nav-li a {
+    text-decoration: none;
+    margin: 0;
+    color: white;
     border-right: 3px solid #fff;
     text-align: center;
-}
-header nav ul li:hover {
-    background-color: rgba(29, 31, 32, 0.76);
-}
-header nav ul li:first-child {
-    border-right: #000;
-}
-header nav ul li:nth-last-child(3) {
-    border-right: none;
-}
-header nav ul a {
-    text-decoration: none;
-    color: white;
-    font-size: 22px;
-    display: block;
-    margin: 0;
     padding: 8px 16px;
+    font-size: 22px;
+    display: inline-block
+
+}
+li.drop {
+    display: inline-block;
+}
+.drop:hover .drop-nav{
+    display: inline-block;
+}
+
+.drop-nav {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(29, 41, 52, 0.66);
+}
+.drop-nav:first-child {
+    border-top: 2px solid #fff;
+}
+.drop-nav a {
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #fff;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 22px;
+}
+.nav-li:hover, .drop:hover .dropnav {
+    background-color: rgba(29, 41, 52, 0.76);
+}
+.drop-nav a:hover {
+    background-color: rgba(29, 41, 52, 0.76);
 }
 .left {
     float: left;
@@ -58,17 +81,22 @@ header nav ul a {
 .icon {
     padding-right: 10px;
 }
-@media screen and (max-width: 600px) {
-    .left, .icon {
-        display: none;
-    }
+.nav-text {
+    display:inline;
 }
+
+
+
+
+
+
+
 
 
 #top {
     width: 100%;
     height: 100%;
-    background-image: url(/images/wolf.jpeg);
+    background-image: url(/images/trees.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -134,9 +162,9 @@ header nav ul a {
 
 .pro1 {
     grid-area: pro1;
-    background-image: url(/images/construction.jpeg);
+    background-image: url(/images/appproject.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 .pro2 {
     grid-area: pro2;
@@ -196,7 +224,7 @@ header nav ul a {
     background-color: rgb(0, 102, 102);
     padding: 70px;
     box-sizing: border-box;
-    background-image: url(/images/snowforest.jpeg);
+    background-image: url(/images/hill.jpeg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -208,9 +236,10 @@ header nav ul a {
     grid-template-columns: fr1 fr1;
     grid-template-areas:
         "left right";
-    border-image: url(/images/border1.png) 80 round;
+    border-image: url(/images/border1.1.png) 80 round;
     border-width: 15px;
     border-style: solid;
+    border-color: transparent;
     width: 100%;
     color: white;
     line-height: 50px;
